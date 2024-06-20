@@ -1,0 +1,24 @@
+<script>
+export default {
+  props: {
+    name: String,
+  },
+  methods: {
+    greet() {
+      return `Hola, ${this.name}!`;
+    },
+  },
+}
+</script>
+
+<template>
+  <h1>{{ name }}</h1>
+  <p>{{ greet() }}</p>
+</template>
+
+<style scoped>
+p {
+  font-weight: bold;
+  color: red;
+}
+</style>

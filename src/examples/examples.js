@@ -1,37 +1,32 @@
-import Example01 from './01-BasicUsage.vue'
-import Example02 from './02-CompositionOptionsAPI.vue'
-import Example03 from './03-Lifecycle.vue'
-import Example04 from './04-Variables.vue'
-import Exercise05 from './05-ExerciseVariables.vue'
-import Exercise06 from './06-ModifyVariables.vue'
-import Exercise07 from './07-ExerciseModifyVariables.vue'
-import Exercise08 from './08-DynamicAttributes.vue'
-import Exercise09 from './09-ExerciseDynamicAttributes.vue'
-import Exercise10 from './10-ComputedProperties.vue'
-import Exercise11 from './11-TemplateConditionals.vue'
-import Exercise12 from './12-ExerciseTemplateConditionals.vue'
-import Exercise13 from './13-TemplateLoops.vue'
-import Exercise14 from './14-ExerciseTemplateLoops.vue'
-import Exercise15 from './15-Forms.vue'
-import Exercise16 from './16-ExerciseForms.vue'
-import Exercise17 from './17-Watchers.vue'
-
 export const examples = {
-  [1]: { component: Example01, description: 'Basic usage' },
-  [2]: { component: Example02, description: 'Composition & Options API' },
-  [3]: { component: Example03, description: 'Lifecycle' },
-  [4]: { component: Example04, description: 'Variables' },
-  [5]: { component: Exercise05, description: '* Exercise: Variables' },
-  [6]: { component: Exercise06, description: 'Modifying variables' },
-  [7]: { component: Exercise07, description: '* Exercise: Modifying variables' },
-  [8]: { component: Exercise08, description: 'Dynamic attributes' },
-  [9]: { component: Exercise09, description: '* Exercise: Dynamic attributes' },
-  [10]: { component: Exercise10, description: 'Computed properties' },
-  [11]: { component: Exercise11, description: 'Template conditionals' },
-  [12]: { component: Exercise12, description: '* Exercise: Template conditionals' },
-  [13]: { component: Exercise13, description: 'Template loops' },
-  [14]: { component: Exercise14, description: '* Exercise: Template loops' },
-  [15]: { component: Exercise15, description: 'Forms' },
-  [16]: { component: Exercise16, description: '* Exercise: Forms' },
-  [17]: { component: Exercise17, description: 'Watchers' }
+  [1]: { component: () => import('./01-BasicUsage.vue'), description: '1 - Basic usage' },
+  [2]: { component: () => import('./02-CompositionOptionsAPI.vue'), description: '2 - Composition & Options API' },
+  [3]: { component: () => import('./03-Lifecycle.vue'), description: '3 - Lifecycle' },
+  [4]: { component: () => import('./04-Variables.vue'), description: '4 - Variables' },
+  [5]: { component: () => import('./05-ExerciseVariables.vue'), description: '5 - * Exercise: Variables' },
+  [6]: { component: () => import('./06-ModifyVariables.vue'), description: '6 - Modifying variables' },
+  [7]: { component: () => import('./07-ExerciseModifyVariables.vue'), description: '7 - * Exercise: Modifying variables' },
+  [8]: { component: () => import('./08-DynamicAttributes.vue'), description: '8 - Dynamic attributes' },
+  [9]: { component: () => import('./09-ExerciseDynamicAttributes.vue'), description: '9 - * Exercise: Dynamic attributes' },
+  [10]: { component: () => import('./10-ComputedProperties.vue'), description: '10 - Computed properties' },
+  [11]: { component: () => import('./11-TemplateConditionals.vue'), description: '11 - Template conditionals' },
+  [12]: { component: () => import('./12-ExerciseTemplateConditionals.vue'), description: '12 - * Exercise: Template conditionals' },
+  [13]: { component: () => import('./13-TemplateLoops.vue'), description: '13 - Template loops' },
+  [14]: { component: () => import('./14-ExerciseTemplateLoops.vue'), description: '14 - * Exercise: Template loops' },
+  [15]: { component: () => import('./15-Forms.vue'), description: '15 - Forms' },
+  [16]: { component: () => import('./16-ExerciseForms.vue'), description: '16 - * Exercise: Forms' },
+  [17]: { component: () => import('./17-Watchers.vue'), description: '17 - Watchers' },
+  [18]: { component: () => import('./18-Components.vue'), description: '18 - Components' },
+  [19]: { component: () => import('./19-ExerciseComponents.vue'), description: '19 - * Exercise: Components' },
+  [20]: { component: () => import('./20-ComponentsProps.vue'), description: '20 - Components: Props' },
+  [21]: { component: () => import('./21-ExerciseProps.vue'), description: '21 - * Exercise: Components Props' },
+  [22]: { component: () => import('./22-ComponentsSlots.vue'), description: '22 - Components: Slots' },
+  [23]: { component: () => import('./23-ExerciseComponentsSlots.vue'), description: '23 - * Exercise: Components Slots' },
+  [24]: { component: () => import('./24-ComponentsNamedSlots.vue'), description: '24 - Components: Named Slots' },
+  [25]: { component: () => import('./25-ComponentsEvents.vue'), description: '25 - Components: Events' },
+  [26]: { component: () => import('./26-ExerciseComponentsEvents.vue'), description: '26 - * Exercise: Components Events' },
+  [27]: { component: () => import('./27-ApiListContacts.vue'), description: '27 - API: List contacts' },
+  [28]: { component: () => import('./28-ExerciseApiCrudContacts.vue'), description: '28 - * Exercise: API: CRUD contacts' },
+  [29]: { component: () => import('./29-PiniaCounter.vue'), description: '29 - Pinia: Counter' },
+  [30]: { component: () => import('./30-ExercisePiniaContacts.vue'), description: '30 - * Exercise: Pinia: Contacts' },
 }
