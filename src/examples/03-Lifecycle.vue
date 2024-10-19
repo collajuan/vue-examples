@@ -12,8 +12,7 @@ export default {
     console.log(`Component mounted by ${this.name}`)
   },
   unmounted() {
-    console.log(`Component unmounted by ${this.name}`);
-    
+    console.log(`Component unmounted by ${this.name}`);    
   },
   beforeUnmount() {
     console.log(`Componente antes de ser desmontado`);
