@@ -2,15 +2,14 @@
 export default {
   data() {
     return {
-      country: 'uruguay',
+      country: '',
       editable: false,
       texto: 'Texto a modificar'
     }
   },
   methods: {
     changeCountry(e) {
-      console.log(e.target.id);
-    
+      console.log(e.target.id);    
       this.country = e.target.id
     },
     changeEditable() {
@@ -38,8 +37,8 @@ export default {
   <input type="text" v-bind:value="texto" @focusout="changeEditable" @change="changeTexto" v-else>
 </template>
 
-<style>
 
+<style>
 input {
   border: solid black 1px;
 }
