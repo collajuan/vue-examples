@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      texto: 'holaa',
+      texto: 'hola',
       textos: ['uno','dos', 'tres'],
       };
     },
