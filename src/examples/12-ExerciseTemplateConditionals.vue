@@ -14,9 +14,6 @@ export default {
     },
     changeEditable() {
       this.editable = !this.editable
-    },
-    changeTexto(e) {
-      this.texto = e.target.value
     }
   }
 }
@@ -34,7 +31,7 @@ export default {
 
 
   <p @click="changeEditable" v-if="!editable">{{texto}}</p>
-  <input type="text" v-bind:value="texto" @focusout="changeEditable" @change="changeTexto" v-else>
+  <input type="text" v-model="texto" @focusout="changeEditable" v-else>
 </template>
 
 

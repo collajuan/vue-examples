@@ -2,12 +2,15 @@
 export default {
   data() {
     return {
-      imgs: ["https://picsum.photos/id/230/200/300","https://picsum.photos/id/237/200/300","https://picsum.photos/id/200/200/300"]
+      imgs: ["https://picsum.photos/id/230/200/300",
+       "https://picsum.photos/id/237/200/300",
+        "https://picsum.photos/id/200/200/300",
+      "https://picsum.photos/id/250/200/300"]
     }
   },
   methods: {
     deleteImage(e) {
-      this.imgs.splice(e.target.id, e.target.id + 1)
+      this.imgs.splice(e.target.id, 1)
       console.log(this.imgs);      
     }
   }
