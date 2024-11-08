@@ -3,13 +3,10 @@ export default {
   data() {
     return {
       detailsAreVisible: false,
-      friend: {
-        id: "manuel",
-        name: "Manuel Lorenzo",
-        phone: "01234 5678 991",
-        email: "manuel@localhost.com",
-      },
     };
+  },
+  props: {
+    friend: Object,
   },
   methods: {
     toggleDetails() {

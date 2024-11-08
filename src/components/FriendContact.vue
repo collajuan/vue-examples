@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      detailsAreVisible: false,
+      detailsAreVisible: true,
     };
   },
   props: {
