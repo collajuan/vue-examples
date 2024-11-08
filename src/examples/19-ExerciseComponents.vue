@@ -2,26 +2,30 @@
 export default {
   data() {
     return {
-      detailsAreVisible: false,
       friends: [
         {
           id: "manuel",
           name: "Manuel Lorenzo",
           phone: "01234 5678 991",
           email: "manuel@localhost.com",
+          detailsAreVisible: false,
         },
         {
           id: "julie",
           name: "Julie Jones",
           phone: "09876 543 221",
           email: "julie@localhost.com",
+          detailsAreVisible: true,
         },
       ],
     };
   },
   methods: {
-    toggleDetails() {
-      this.detailsAreVisible = !this.detailsAreVisible;
+    toggleDetails(id) {
+      console.log(id)
+      let indx = this.friends.findIndex(friend => friend.id === id)
+      console.log(indx)
+      this.friends[indx].detailsAreVisible = !this.friends[indx].detailsAreVisible;
     },
   },
 };
@@ -34,14 +38,14 @@ export default {
       <ul>
         <li class="card" v-for="friend in friends" :key="friend.id">
           <h2>{{ friend.name }}</h2>
-          <button @click="toggleDetails()">
-            {{ detailsAreVisible ? "Hide" : "Show" }} Details
+          <button @click="toggleDetails(friend.id)">
+            {{ friend.detailsAreVisible ? "Hide" : "Show" }} Details
           </button>
-          <ul v-if="detailsAreVisible">
+          <ul v-if="friend.detailsAreVisible">
             <li><strong>Phone:</strong> {{ friend.phone }}</li>
             <li><strong>Email:</strong> {{ friend.email }}</li>
           </ul>
-          <button class="ml-8" @click="toggleDetails()">
+          <button class="ml-8" @click="toggleDetails(friend.id)">
             See more ->
           </button>
         </li>

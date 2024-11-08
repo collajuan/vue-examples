@@ -19,14 +19,14 @@ export default {
     handleSubmit() {
       console.log('Formulario enviado:', this.usuario.name, this.usuario.email)
       if(!this.usuario.name) {
-        alert('Debe completar nombre')
         this.nameOk = true
+        alert('Debe completar nombre')
       }
       else if(!this.usuario.email) {
         alert('Debe completar email')
       } else {
-        alert(`Formulario enviado: ${this.usuario.name} ${this.usuario.email} Opción: ${this.selected}`, )
         this.nameOk = false
+        alert(`Formulario enviado: ${this.usuario.name} ${this.usuario.email} Opción: ${this.selected}`, )
         this.usuario.name = ''
         this.usuario.email = ''
       }
